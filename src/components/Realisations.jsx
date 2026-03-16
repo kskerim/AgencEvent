@@ -5,32 +5,52 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const realisations = [
   {
-    titre: 'Renovation Carrelage Salle de Bain',
-    description: "Depose de l'ancien revetement, preparation du support, pose de carrelage mural et au sol, joints hydrofuges, finitions soignees.",
-    tag: 'Carrelage',
-    avant: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=900&q=80',
-    apres: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80',
+    titre: 'Renovation Complete Salle de Bain',
+    description: "Refection integrale d'une salle de bain dans un appartement haussmannien du 16e. Depose complete, reprise de la plomberie, pose de carrelage grand format, douche a l'italienne et double vasque.",
+    tag: 'Salle de Bain',
+    lieu: 'Paris 16e',
+    avant: 'https://images.unsplash.com/photo-1767385734289-527ca5b95d37?auto=format&fit=crop&w=900&q=80',
+    apres: 'https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?auto=format&fit=crop&w=900&q=80',
   },
   {
-    titre: 'Pose de Carrelage Cuisine',
-    description: 'Remplacement du carrelage ancien, pose de carreaux grands formats, alignement parfait, finitions propres et durables.',
-    tag: 'Carrelage',
-    avant: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80',
-    apres: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80',
+    titre: 'Renovation Salon Parisien',
+    description: "Transformation complete d'un salon dans un appartement pres des Champs-Elysees. Peinture, parquet ponce et vitrifie, moulures restaurees, eclairage contemporain.",
+    tag: 'Salon',
+    lieu: 'Paris 8e',
+    avant: 'https://images.unsplash.com/photo-1749372514266-5e895e67c224?auto=format&fit=crop&w=900&q=80',
+    apres: 'https://images.unsplash.com/photo-1759238136818-7b00ec9e782a?auto=format&fit=crop&w=900&q=80',
   },
   {
-    titre: 'Carrelage Sol Salon',
-    description: 'Mise a niveau du sol, pose de carrelage effet pierre naturelle, joints discrets, resultat moderne et lumineux.',
-    tag: 'Carrelage',
-    avant: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=900&q=80',
-    apres: 'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=900&q=80',
+    titre: 'Refection Cuisine Complete',
+    description: "Renovation integrale d'une cuisine pres de la Place d'Italie. Depose de l'ancienne cuisine, nouvelle plomberie, carrelage mural, plan de travail en quartz et meubles sur mesure.",
+    tag: 'Cuisine',
+    lieu: 'Paris 13e',
+    avant: 'https://images.unsplash.com/photo-1754582258353-adb97e11637f?auto=format&fit=crop&w=900&q=80',
+    apres: 'https://images.unsplash.com/photo-1750764484555-58d055fdd2c7?auto=format&fit=crop&w=900&q=80',
   },
   {
-    titre: 'Transformation Salle de Bain',
-    description: 'Ancienne salle de bain renovee, carrelage mural et sol, ambiance lumineuse et moderne, finitions haut de gamme.',
+    titre: 'Plomberie et Salle d\'Eau',
+    description: "Renovation complete de la plomberie et creation d'une salle d'eau moderne a Creteil. Remplacement des canalisations, pose d'un receveur extra-plat, robinetterie haut de gamme.",
+    tag: 'Plomberie',
+    lieu: 'Creteil',
+    avant: 'https://images.unsplash.com/photo-1658595148900-c77873724e98?auto=format&fit=crop&w=900&q=80',
+    apres: 'https://images.unsplash.com/photo-1704731529088-19083feb5b43?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    titre: 'Carrelage Sol et Faience Murale',
+    description: "Depose du carrelage existant, ragerage du sol, pose de carrelage grand format effet marbre au sol et faience murale dans un appartement du 15e. Joints epoxy, finition impeccable.",
     tag: 'Carrelage',
-    avant: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3fd8?auto=format&fit=crop&w=900&q=80',
-    apres: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80',
+    lieu: 'Paris 15e',
+    avant: 'https://images.unsplash.com/photo-1768321902794-c24fb1f00661?auto=format&fit=crop&w=900&q=80',
+    apres: 'https://images.unsplash.com/photo-1706670359282-e5182f748973?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    titre: 'Peinture et Decoration Appartement',
+    description: "Travaux de peinture et decoration complete d'un appartement a Boulogne-Billancourt. Preparation des murs, enduit de lissage, peinture, pose de moulures et eclairage d'ambiance.",
+    tag: 'Peinture',
+    lieu: 'Boulogne-Billancourt',
+    avant: 'https://images.unsplash.com/photo-1751486403890-793880b12adb?auto=format&fit=crop&w=900&q=80',
+    apres: 'https://images.unsplash.com/photo-1758448755856-01d3add0177b?auto=format&fit=crop&w=900&q=80',
   },
 ]
 
@@ -130,9 +150,14 @@ export default function Realisations() {
 
                   {/* description du projet */}
                   <div className="p-8">
-                    <span className="text-xs font-semibold text-accent bg-accent/10 px-3 py-1.5 rounded-full">
-                      {slide.tag}
-                    </span>
+                    <div className="flex items-center gap-3 flex-wrap">
+                      <span className="text-xs font-semibold text-accent bg-accent/10 px-3 py-1.5 rounded-full">
+                        {slide.tag}
+                      </span>
+                      <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">
+                        {slide.lieu}
+                      </span>
+                    </div>
                     <h3 className="text-xl font-heading font-semibold text-zinc-900 dark:text-white mt-4 mb-2">
                       {slide.titre}
                     </h3>

@@ -14,15 +14,34 @@ const markerIcon = L.divIcon({
 
 // liste des zones d'intervention
 const zones = [
+  // 15e arrondissement
   { name: 'Paris 15e - Grenelle', coords: [48.846, 2.2878] },
   { name: 'Paris 15e - Javel', coords: [48.836, 2.266] },
   { name: 'Paris 15e - Vaugirard', coords: [48.838, 2.3035] },
   { name: 'Paris 15e - Commerce', coords: [48.848, 2.285] },
+  // 16e arrondissement
   { name: 'Paris 16e - Passy', coords: [48.86, 2.274] },
   { name: 'Paris 16e - Auteuil', coords: [48.851, 2.254] },
   { name: 'Paris 16e - Chaillot', coords: [48.864, 2.287] },
+  { name: 'Paris 16e - La Muette', coords: [48.855, 2.268] },
+  { name: 'Paris 16e - Trocadero', coords: [48.862, 2.2865] },
+  { name: 'Paris 16e - Ranelagh', coords: [48.856, 2.261] },
+  { name: 'Paris 16e - Jasmin', coords: [48.854, 2.272] },
+  { name: 'Paris 16e - Porte Dauphine', coords: [48.871, 2.275] },
+  // 8e arrondissement
   { name: 'Paris 8e - Champs-Elysees', coords: [48.8698, 2.307] },
   { name: 'Paris 8e - Madeleine', coords: [48.87, 2.322] },
+  { name: 'Paris 8e - Parc Monceau', coords: [48.879, 2.309] },
+  { name: 'Paris 8e - Saint-Augustin', coords: [48.874, 2.32] },
+  { name: 'Paris 8e - Elysee', coords: [48.87, 2.315] },
+  { name: 'Paris 8e - Faubourg Saint-Honore', coords: [48.872, 2.31] },
+  // 13e arrondissement
+  { name: "Paris 13e - Place d'Italie", coords: [48.833, 2.355] },
+  { name: 'Paris 13e - Gobelins', coords: [48.836, 2.352] },
+  { name: 'Paris 13e - Bibliotheque', coords: [48.83, 2.376] },
+  { name: 'Paris 13e - Tolbiac', coords: [48.826, 2.358] },
+  { name: 'Paris 13e - Olympiades', coords: [48.827, 2.367] },
+  // autres arrondissements
   { name: 'Paris 6e - Saint-Germain', coords: [48.8535, 2.334] },
   { name: 'Paris 7e - Tour Eiffel', coords: [48.8584, 2.2945] },
   { name: 'Paris 7e - Invalides', coords: [48.856, 2.312] },
@@ -37,21 +56,24 @@ const zones = [
   { name: 'Paris 10e - Gare du Nord', coords: [48.88, 2.354] },
   { name: 'Paris 11e - Oberkampf', coords: [48.863, 2.374] },
   { name: 'Paris 12e - Gare de Lyon', coords: [48.8445, 2.373] },
-  { name: "Paris 13e - Place d'Italie", coords: [48.833, 2.355] },
   { name: 'Paris 14e - Montparnasse', coords: [48.839, 2.325] },
   { name: 'Paris 17e - Ternes', coords: [48.88, 2.294] },
   { name: 'Paris 18e - Abbesses', coords: [48.885, 2.338] },
   { name: 'Paris 19e - Buttes-Chaumont', coords: [48.88, 2.377] },
   { name: 'Paris 20e - Pere Lachaise', coords: [48.861, 2.393] },
+  // banlieue
   { name: 'Boulogne-Billancourt', coords: [48.835, 2.245] },
   { name: 'Issy-les-Moulineaux', coords: [48.825, 2.266] },
+  { name: 'Creteil - Centre', coords: [48.791, 2.462] },
+  { name: 'Creteil - Soleil', coords: [48.796, 2.458] },
+  { name: 'Creteil - Universite', coords: [48.789, 2.451] },
 ]
 
 // composant pour limiter les bornes de la carte
 function LimitesCarte() {
   const map = useMap()
   useEffect(() => {
-    const bornes = L.latLngBounds([48.815, 2.223], [48.902, 2.469])
+    const bornes = L.latLngBounds([48.775, 2.200], [48.910, 2.500])
     map.setMaxBounds(bornes)
     map.setMinZoom(11)
   }, [map])
