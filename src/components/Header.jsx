@@ -33,10 +33,7 @@ export default function Header() {
         <a href="#accueil" className={`font-heading text-xl font-bold tracking-tight transition-colors ${
           defilement || ouvert ? 'text-zinc-900 dark:text-white' : 'text-white'
         }`}>
-          Second'Art
-          <span className={`ml-1 font-sans text-sm font-medium ${
-            defilement || ouvert ? 'text-accent' : 'text-indigo-300'
-          }`}>BTP</span>
+          AgencEvent
         </a>
 
         {/* navigation desktop + bascule theme */}

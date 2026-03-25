@@ -14,7 +14,7 @@ export default function Footer() {
           {/* colonne entreprise */}
           <div>
             <h3 className="font-heading text-xl font-bold text-white mb-2">
-              Second'Art <span className="text-accent-light">BTP</span>
+              AgencEvent
             </h3>
             <p className="text-sm text-zinc-400 leading-relaxed">
               Entreprise generale du batiment specialisee dans le second oeuvre, la renovation interieure et l'amenagement de vos espaces.
@@ -44,8 +44,8 @@ export default function Footer() {
               <a href="tel:+33616140136" className="hover:text-accent-light transition-colors">
                 +33 6 16 14 01 36
               </a>
-              <a href="mailto:contact@secondartbtp.fr" className="hover:text-accent-light transition-colors">
-                contact@secondartbtp.fr
+              <a href="mailto:contact@agencevent.fr" className="hover:text-accent-light transition-colors">
+                contact@agencevent.fr
               </a>
               <span>Paris et Ile-de-France</span>
             </div>
@@ -55,7 +55,7 @@ export default function Footer() {
         {/* separateur et copyright */}
         <div className="border-t border-zinc-800 mt-12 pt-8 text-center">
           <p className="text-xs text-zinc-500">
-            &copy; {new Date().getFullYear()} Second'Art BTP — Tous droits reserves.
+            &copy; {new Date().getFullYear()} AgencEvent — Tous droits reserves.
           </p>
         </div>
       </div>

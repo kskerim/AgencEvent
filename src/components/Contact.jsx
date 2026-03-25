@@ -12,8 +12,8 @@ const infos = [
   {
     icon: Mail,
     label: 'Email',
-    valeur: 'contact@secondartbtp.fr',
-    lien: 'mailto:contact@secondartbtp.fr',
+    valeur: 'contact@agencevent.fr',
+    lien: 'mailto:contact@agencevent.fr',
   },
   {
     icon: MapPin,

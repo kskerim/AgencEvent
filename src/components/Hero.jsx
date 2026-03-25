@@ -54,8 +54,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-heading text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 tracking-tight"
         >
-          Second'Art
-          <span className="text-accent-light"> BTP</span>
+          AgencEvent
         </motion.h1>
 
         {/* titre anime mot par mot */}
